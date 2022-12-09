@@ -1,4 +1,4 @@
-public class qthird{
+public class Pattern{
 	public static void main(String[] args){
 		int size = Integer.parseInt(args[0]);
 		int count = 1 ;

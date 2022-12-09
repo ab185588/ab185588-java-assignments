@@ -1,8 +1,8 @@
-public class itSlab
+public class ItSlab
 {	
  	public static void main(String[] args) {
 	double sal = Double.parseDouble(args[0]);
-		System.out.println(sal);
+		//System.out.println(sal);
 		double tax = 0;
 		if(sal-80000<0) {
 			sal=0;
@@ -29,6 +29,6 @@ public class itSlab
 		}
 		
 		tax += 0.3*sal;
-		System.out.println(tax);
+		System.out.println("Tax : " + tax);
 	}
 }

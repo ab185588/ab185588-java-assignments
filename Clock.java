@@ -1,15 +1,15 @@
-public class questionfourth{
+public class Clock{
 	public static void main(String[] args){
 	 	int hours,minutes,seconds;
 		hours = Integer.parseInt(args[0]);
 		minutes = Integer.parseInt(args[1]);
 		seconds = Integer.parseInt(args[2]);
-	 	clock c = new clock(hours,minutes,seconds);
+	 	Mode m = new Mode(hours,minutes,seconds);
 	}
 }
-class clock{
+class Mode{
 	private int hh,mm,ss;
-        clock(int h , int m , int s){
+        Mode(int h , int m , int s){
 	 	hh = h;
 		mm = m;
 		ss = s;
@@ -27,10 +27,10 @@ class clock{
 
         void show(){
 		if( hh>12 ) {
-			System.out.println("The current time is "+ (hh-12) + " hours " + mm + " minutes " + ss +" seconds "+ " PM");
+			System.out.println((hh-12) + " : " + mm + " : " + ss +"  "+ " PM");
 		}
 		else{
-			System.out.println("The current time is "+ (hh) + " hours " + mm + " minutes " + ss +" seconds "+ " AM");
+			System.out.println(hh + " : " + mm + " : " + ss +"  "+ " AM");
 		}
 	}
 }

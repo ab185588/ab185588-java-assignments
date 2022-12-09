@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class qSecond
+public class MyException
 {
     static void validate(int num) throws NegativeSizeException{
         if(num<0){
